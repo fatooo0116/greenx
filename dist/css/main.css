@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+.navbar-fixed.small_nav nav .nav-wrapper .sidenav-trigger,
+.navbar-fixed.small_nav nav .nav-wrapper .sidenav-trigger i {
+  height: 40px !important;
+  line-height: 50px !important; }
+
+.navbar-fixed {
+  position: fixed; }
+  .navbar-fixed nav {
+    padding-left: 39px;
+    padding-right: 39px;
+    height: 69px;
+    line-height: 69px; }
+    .navbar-fixed nav .nav-wrapper {
+      max-width: 906px;
+      height: 69px;
+      margin: auto; }
+      .navbar-fixed nav .nav-wrapper .brand-logo {
+        display: block;
+        height: 69px;
+        padding: 14px 0; }
+        .navbar-fixed nav .nav-wrapper .brand-logo img {
+          height: 100%;
+          display: block; }
+      .navbar-fixed nav .nav-wrapper .sidenav-trigger, .navbar-fixed nav .nav-wrapper .sidenav-trigger i {
+        height: 64px;
+        line-height: 64px;
+        color: #00ab1c; }
+      .navbar-fixed nav .nav-wrapper ul a {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #00ab1c; }
+        .navbar-fixed nav .nav-wrapper ul a.active {
+          color: #00ab1c; }
+
+#mobile-demo {
+  background: #000000; }
+  #mobile-demo li > a {
+    color: #fff; }
+    #mobile-demo li > a.active {
+      color: #00ab1c; }
+
+/*
+@import "tpl_node/header_mobile";
+@import "tpl_node/section";
+@import "tpl_node/reset";
+@import "tpl_node/page";
+@import "tpl_node/client";
+@import "tpl_node/event1";
+@import "tpl_node/about";
+@import "tpl_node/projects";
+
+@import "tpl_admin/login";
+@import "tpl_admin/admin";
+*/
+
+/*# sourceMappingURL=main.css.map */

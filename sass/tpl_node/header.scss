@@ -1,0 +1,65 @@
+
+
+
+            .navbar-fixed.small_nav nav .nav-wrapper .sidenav-trigger,
+            .navbar-fixed.small_nav nav .nav-wrapper .sidenav-trigger i
+            {
+                 height: 40px ! important;
+                 line-height: 50px ! important;                   
+            }
+
+.navbar-fixed{
+    position: fixed;
+    nav{
+        padding-left: 39px;
+        padding-right: 39px;
+        height: 69px;
+        line-height: 69px;
+        .nav-wrapper {       
+            max-width: 906px;
+            height: 69px;
+            margin: auto;
+
+            .brand-logo{
+                display: block;
+                height:69px;
+                padding:14px 0;
+                img{
+                    height:100%;
+                    display: block;
+                }
+            }
+
+            .sidenav-trigger, .sidenav-trigger i{
+                height: 64px;
+                line-height: 64px;
+                color: #00ab1c;            
+            }
+            
+
+            ul{
+                a{
+                   // font-family: 'Brandon Grotesque Medium';
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color:#00ab1c;
+                    &.active{
+                        color:#00ab1c;
+                    }
+                }          
+            }          
+        }
+    }
+}
+
+
+#mobile-demo{
+    background:#000000;
+  li>a{
+     color:#fff;
+     &.active{
+         color:#00ab1c;
+     }
+ }
+}

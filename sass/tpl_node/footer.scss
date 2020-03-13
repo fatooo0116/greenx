@@ -1,0 +1,64 @@
+
+footer{
+    background:#13441f;
+    padding-left:39px;
+    padding-right:39px;
+    font-weight: 400;
+    nav{
+     height: 67px;
+     line-height: 67px;    
+        .nav-wrapper{
+         max-width: 1440px;
+         margin-left:auto;
+         margin-right:auto;
+            .brand-logo{
+                display: block;
+                position: relative;
+            }
+        }
+    }
+    footer nav ul a{
+        color:#00ab1c;
+    }
+    nav ul a.mail{
+     font-size: 14px;
+     display: inline-block;
+     color:#00ab1c;
+     
+     &:hover{
+         // background: none;;
+     }
+    }
+    ul.term{
+        li{
+            a.sep{
+                position: relative;
+                &:after{
+                    height:14px;
+                    width:1px;
+                    content:'';
+                    background: #fff;
+                    top:50%;
+                    margin-top:-7px;
+                    position:absolute;
+                    right:0;
+                }
+            }
+        }
+    }
+ 
+    ul#nav-mobile_left{
+         li{
+             a{
+                 font-weight:300;
+             }
+         }
+    }
+ 
+    ul#nav-mobile{
+         li{
+                 font-weight:300;
+                 font-size: 14px;
+         }
+     }   
+ }

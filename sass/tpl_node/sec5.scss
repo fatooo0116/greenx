@@ -1,0 +1,46 @@
+#sec5{
+    background:#f9f9f9;;
+    &:before{
+        content:"";
+        position: absolute;
+        background:#388e46;
+        left:0;
+        top:0;
+        height: 100%;;
+        width: calc(50% - 150px);
+    }
+    .inner{
+        transform: translate(-90px, 0%);
+        height:550px;       
+        max-width: 1024px;
+        margin:auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;;
+        .xleft{
+            .pic{
+                max-width: 592px;;
+            }
+        }
+        .xright{
+            max-width: 270px;;
+            .box{
+                .pic{
+                    img{
+                        width:40px;
+                    }
+                }
+                h3{
+                    font-size:26px;
+                    font-weight: bold;
+                    color:#00ab1c;
+                    margin:15px 0 17px;
+                }
+                p{
+                    font-size:12px;
+                    color:#4a4a4a;
+                }
+            }
+        }
+    }
+}

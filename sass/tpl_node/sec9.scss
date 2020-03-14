@@ -1,0 +1,38 @@
+#sec9{
+    margin:auto;
+    background:#fff;
+    background-size:cover;
+    background-position:center;
+    padding-top:67px;
+    padding-bottom:68px;
+    .inner{
+       
+      
+        max-width: 800px;
+        margin:auto;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;;
+
+
+        .xleft{
+            .pic{
+                max-width: 233px;;
+            }
+        }
+        .xright{
+            max-width: 470px;;
+            h4{
+                font-weight: bold;
+                font-size:21px;
+                color:#6b6b6b;
+            }
+            p{
+                color:#4a4a4a;
+                line-height: 18px;
+                font-size: 12px;;;
+            }
+        }
+        
+    }
+}

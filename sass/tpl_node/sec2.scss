@@ -1,0 +1,53 @@
+#sec2{
+
+   
+    margin:auto;
+
+    background-image:url(../images/number-bg@2x.jpg);
+    background-size:cover;
+    background-position:center;
+
+
+    .inner{
+        display:flex;
+        padding:0 15px;
+        max-width: 930px;
+        margin:auto;
+        justify-content: space-between;
+        height:186px;
+        align-items: center;
+        align-content: center;
+        .logo{
+            width:180px;
+            img{
+                width:180px;
+            }
+        }
+        .right{
+            width:639px;
+            justify-content: space-between;
+            display:flex;
+           // justify-content: center;
+            .item{
+                width:124px;
+                color:#00ab1c;
+                text-align: center;
+                .num{
+                    font-size: 50px;;
+                    font-weight:bold;
+                    .tx{
+                        font-size: 30px;;
+                        font-weight: 500;
+                    }
+                    .tx2{
+                        font-size:18px;
+                    }
+                }
+                .text{
+                    font-size: 14px;;
+                }
+            }
+        }
+
+    }
+}

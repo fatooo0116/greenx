@@ -33,3 +33,19 @@
         }
     }
 }
+
+
+@media (max-width: 1400px){
+    #sec7 .inner {
+        transform: translate(0%, 0%);
+        padding:0 15px;
+    }
+}
+
+@media (max-width: 600px){
+    #sec7 .inner {
+        .float_left{
+            margin:auto;
+        }
+    }
+}

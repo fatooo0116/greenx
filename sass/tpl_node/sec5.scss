@@ -44,3 +44,39 @@
         }
     }
 }
+
+@media (max-width: 1400px){
+    #sec5 .inner {
+        transform: translate(0%, 0%);
+        padding:0 15px;
+    }
+}
+
+
+@media (max-width: 768px){
+    #sec5:before{
+        opacity: 0;
+    }
+    #sec5{
+      .inner{
+        flex-wrap: wrap;
+        height:auto;
+        padding:30px ;
+       //  flex-direction: column-reverse;
+        .xleft{
+          width:100%;      
+          margin-bottom: 15px;;   
+        }
+        .xright{
+          width:100%;
+          text-align: center;
+          max-width: none;
+          .pic{
+            img{
+              margin:auto;
+            }
+          }
+        }
+      }
+    }
+  }

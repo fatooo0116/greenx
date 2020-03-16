@@ -15,10 +15,11 @@ section, section .inner {
 .navbar-fixed {
   position: fixed; }
   .navbar-fixed nav {
-    padding-left: 39px;
-    padding-right: 39px;
+    padding-left: 0px;
+    padding-right: 0px;
     height: 69px;
-    line-height: 69px; }
+    line-height: 69px;
+    transition: 0.3s; }
     .navbar-fixed nav .nav-wrapper {
       max-width: 100%;
       height: 69px;
@@ -26,7 +27,7 @@ section, section .inner {
       .navbar-fixed nav .nav-wrapper .brand-logo {
         display: block;
         height: 69px;
-        padding: 14px 0; }
+        padding: 14px 15px; }
         .navbar-fixed nav .nav-wrapper .brand-logo img {
           height: 100%;
           display: block; }
@@ -42,6 +43,13 @@ section, section .inner {
         .navbar-fixed nav .nav-wrapper ul a.active {
           color: #fff; }
 
+#header.fixed nav {
+  background: rgba(0, 0, 0, 0.5) !important;
+  height: 58px;
+  line-height: 58px; }
+  #header.fixed nav .brand-logo {
+    height: 58px; }
+
 #mobile-demo {
   background: #000000; }
   #mobile-demo li > a {
@@ -49,13 +57,28 @@ section, section .inner {
     #mobile-demo li > a.active {
       color: #00ab1c; }
 
+@media (max-width: 768px) {
+  #header nav .brand-logo,
+  #header.fixed nav {
+    height: 58px;
+    line-height: 58px; }
+
+  .navbar-fixed nav .nav-wrapper .sidenav-trigger,
+  .navbar-fixed nav .nav-wrapper .sidenav-trigger i {
+    height: 58px;
+    line-height: 58px; }
+
+  #header nav {
+    background: rgba(0, 0, 0, 0.5) !important;
+    height: 58px;
+    line-height: 58px; } }
 #sec1 {
   margin: auto;
   background-size: cover;
   background-position: center;
-  background-image: url("../images/banner-bg@2x.jpg"); }
+  height: 699px; }
   #sec1 .inner {
-    height: 700px;
+    height: 699px;
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -79,6 +102,9 @@ section, section .inner {
         width: 148px;
         justify-content: center; }
 
+@media (max-width: 1200px) {
+  #sec1 .inner .top_header {
+    padding: 0 20px; } }
 #sec2 {
   margin: auto;
   background-image: url(../images/number-bg@2x.jpg);
@@ -116,6 +142,33 @@ section, section .inner {
         #sec2 .inner .right .item .text {
           font-size: 14px; }
 
+@media (max-width: 768px) {
+  #sec2 .inner {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px; }
+    #sec2 .inner .logo {
+      margin: auto; }
+      #sec2 .inner .logo img {
+        margin: auto; }
+    #sec2 .inner .right {
+      width: 100%; }
+      #sec2 .inner .right .item {
+        width: 50%; } }
+@media (max-width: 600px) {
+  #sec2 .inner .logo {
+    padding: 5px 0; }
+    #sec2 .inner .logo img {
+      height: 70px;
+      width: auto; }
+  #sec2 .inner .right {
+    width: 100%;
+    flex-wrap: wrap; }
+    #sec2 .inner .right .item {
+      width: 50%;
+      padding-top: 5px;
+      padding-bottom: 25px; } }
 #sec3 {
   margin: auto;
   background-image: url(../images/02-bg@2x.jpg);
@@ -142,6 +195,21 @@ section, section .inner {
     #sec3 .inner .right {
       width: 546px; }
 
+@media (max-width: 768px) {
+  #sec3 .inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 30px 30px;
+    flex-direction: column-reverse; }
+    #sec3 .inner .left {
+      width: 100%;
+      text-align: center; }
+    #sec3 .inner .right {
+      width: 100%; }
+      #sec3 .inner .right .vidoe {
+        width: 100%; }
+        #sec3 .inner .right .vidoe video {
+          width: 100% !important; } }
 #sec4 {
   margin: auto;
   background: #fff; }
@@ -168,6 +236,22 @@ section, section .inner {
     #sec4 .inner .right {
       width: 780px; }
 
+@media (max-width: 1400px) {
+  #sec4 .inner {
+    transform: translate(0%, 0%);
+    padding: 0 15px; } }
+@media (max-width: 768px) {
+  #sec4 .inner {
+    flex-wrap: wrap;
+    padding: 30px;
+    flex-direction: column-reverse; }
+    #sec4 .inner .left {
+      width: 100%;
+      text-align: center; }
+      #sec4 .inner .left .pic img {
+        margin: auto; }
+    #sec4 .inner .right {
+      width: 100%; } }
 #sec5 {
   background: #f9f9f9; }
   #sec5:before {
@@ -201,13 +285,34 @@ section, section .inner {
         font-size: 12px;
         color: #4a4a4a; }
 
+@media (max-width: 1400px) {
+  #sec5 .inner {
+    transform: translate(0%, 0%);
+    padding: 0 15px; } }
+@media (max-width: 768px) {
+  #sec5:before {
+    opacity: 0; }
+
+  #sec5 .inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 30px; }
+    #sec5 .inner .xleft {
+      width: 100%;
+      margin-bottom: 15px; }
+    #sec5 .inner .xright {
+      width: 100%;
+      text-align: center;
+      max-width: none; }
+      #sec5 .inner .xright .pic img {
+        margin: auto; } }
 #sec6 {
   margin: auto;
   background-image: url(../images/secruespace-bg@2x.jpg);
   background-size: cover;
   background-position: center; }
   #sec6 .inner {
-    transform: translate(-90px, 0%);
+    transform: translate(90px, 0%);
     height: 550px;
     max-width: 1024px;
     margin: auto;
@@ -229,6 +334,13 @@ section, section .inner {
         max-width: 300px;
         line-height: 18px; }
 
+@media (max-width: 1400px) {
+  #sec6 .inner {
+    transform: translate(0%, 0%);
+    padding: 0 15px; } }
+@media (max-width: 600px) {
+  #sec6 .inner .float_right {
+    margin: auto; } }
 #sec7 {
   margin: auto;
   background-image: url(../images/no-contract-bg@2x.jpg);
@@ -257,6 +369,13 @@ section, section .inner {
         max-width: 300px;
         line-height: 18px; }
 
+@media (max-width: 1400px) {
+  #sec7 .inner {
+    transform: translate(0%, 0%);
+    padding: 0 15px; } }
+@media (max-width: 600px) {
+  #sec7 .inner .float_left {
+    margin: auto; } }
 #sec8 {
   margin: auto;
   background: #f6f6f6;
@@ -305,6 +424,31 @@ section, section .inner {
             width: 100%;
             font-size: 11px; }
 
+@media (max-width: 768px) {
+  #sec8 {
+    padding-top: 0px;
+    padding-bottom: 30px; }
+    #sec8 .inner {
+      padding: 0 20px;
+      flex-wrap: wrap; }
+      #sec8 .inner .left {
+        width: 100%;
+        max-width: none;
+        padding: 15px 0;
+        text-align: center; }
+        #sec8 .inner .left .pic img {
+          margin: 0px auto 15px;
+          text-align: center; }
+        #sec8 .inner .left h3 {
+          text-align: center;
+          margin: auto; }
+      #sec8 .inner .right {
+        width: 100%;
+        text-align: center; }
+        #sec8 .inner .right .box {
+          margin: auto;
+          width: 100%;
+          padding: 40px 10px 35px; } }
 #sec9 {
   margin: auto;
   background: #fff;
@@ -331,6 +475,21 @@ section, section .inner {
         line-height: 18px;
         font-size: 12px; }
 
+@media (max-width: 768px) {
+  #sec9 {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    #sec9 .inner {
+      padding: 0 15px;
+      flex-wrap: wrap; }
+      #sec9 .inner .xleft {
+        width: 100%;
+        padding: 15px 0; }
+        #sec9 .inner .xleft .pic {
+          margin: auto; }
+      #sec9 .inner .xright {
+        width: 100%;
+        text-align: center; } }
 #sec10 {
   margin: auto;
   background-image: url(../images/bg@2x.jpg);
@@ -344,12 +503,14 @@ section, section .inner {
     justify-content: center;
     align-items: center; }
     #sec10 .inner .box {
-      max-width: 680px;
+      padding: 0 15px;
+      max-width: 710px;
       color: #fff;
       text-align: center; }
       #sec10 .inner .box h3 {
         font-weight: bold;
-        font-size: 28px; }
+        font-size: 28px;
+        line-height: 1.5em; }
       #sec10 .inner .box p {
         max-width: 486px;
         margin: auto;
@@ -358,14 +519,16 @@ section, section .inner {
         margin-bottom: 30px; }
 
 footer {
+  overflow: hidden;
   background: #13441f;
   padding-left: 39px;
   padding-right: 39px;
   font-weight: 400; }
   footer nav {
-    height: 67px;
+    min-height: 67px;
     line-height: 67px; }
     footer nav .nav-wrapper {
+      height: auto !important;
       max-width: 1440px;
       margin-left: auto;
       margin-right: auto; }
@@ -394,6 +557,37 @@ footer {
   footer ul#nav-mobile li {
     font-weight: 300;
     font-size: 14px; }
+
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 0; }
+
+  ul.left,
+  ul.right {
+    float: none;
+    width: 100%; }
+    ul.left li,
+    ul.right li {
+      width: 100%;
+      line-height: 40px;
+      text-align: center; }
+      ul.left li a,
+      ul.right li a {
+        text-align: center;
+        line-height: 40px; }
+        ul.left li a:after,
+        ul.right li a:after {
+          display: none; } }
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  zoom: 1; }
 
 .button,
 input[type="submit"] {
@@ -5850,6 +6044,7 @@ input[type=range]::-ms-thumb {
 
 .sidenav {
   position: fixed;
+  transition: 0.3s;
   width: 200px;
   left: 0;
   top: 0;
@@ -5864,7 +6059,8 @@ input[type=range]::-ms-thumb {
   overflow-y: auto;
   will-change: transform;
   backface-visibility: hidden;
-  transform: translateX(-105%); }
+  transform: translateX(-105%);
+  background: #13441f; }
   .sidenav.right-aligned {
     right: 0;
     transform: translateX(105%);
@@ -5878,7 +6074,7 @@ input[type=range]::-ms-thumb {
     .sidenav li.active {
       background-color: rgba(0, 0, 0, 0.05); }
   .sidenav li > a {
-    color: rgba(0, 0, 0, 0.87);
+    color: #fff;
     display: block;
     font-size: 14px;
     font-weight: 500;
@@ -5966,14 +6162,16 @@ input[type=range]::-ms-thumb {
     left: auto; }
 
 @media only screen and (max-width: 992px) {
-  .sidenav.sidenav-fixed {
-    transform: translateX(-105%); }
-    .sidenav.sidenav-fixed.right-aligned {
-      transform: translateX(105%); }
-  .sidenav > a {
-    padding: 0 16px; }
-  .sidenav .user-view {
-    padding: 16px 16px 0; } }
+  .sidenav {
+    transition: 0.3s; }
+    .sidenav.sidenav-fixed {
+      transform: translateX(0%); }
+      .sidenav.sidenav-fixed.right-aligned {
+        transform: translateX(105%); }
+    .sidenav > a {
+      padding: 0 16px; }
+    .sidenav .user-view {
+      padding: 16px 16px 0; } }
 .sidenav .collapsible-body > ul:not(.collapsible) > li.active,
 .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active {
   background-color: #ee6e73; }

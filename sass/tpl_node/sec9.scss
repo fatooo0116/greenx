@@ -36,3 +36,27 @@
         
     }
 }
+
+
+@media (max-width: 768px){
+    #sec9{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    
+        .inner{
+            padding: 0 15px;
+            flex-wrap: wrap;
+            .xleft{
+                width:100%;
+                padding:  15px 0;
+                .pic{
+                    margin: auto;
+                }
+            }
+            .xright{
+                width:100%;
+                text-align: center;
+            }
+        }
+    }
+ }

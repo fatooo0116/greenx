@@ -1,5 +1,7 @@
+
 .sidenav {
   position: fixed;
+  transition: 0.3s; 
   width: $sidenav-width;
   left: 0;
   top: 0;
@@ -15,6 +17,7 @@
   will-change: transform;
   backface-visibility: hidden;
   transform: translateX(-105%);
+  background: #13441f;
 
   @extend .z-depth-1;
 
@@ -39,7 +42,7 @@
   }
 
   li > a {
-    color: $sidenav-font-color;
+    color: #fff;
     display: block;
     font-size: $sidenav-font-size;
     font-weight: 500;
@@ -170,10 +173,11 @@
 }
 
 // Fixed Sidenav hide on smaller
-@media #{$medium-and-down} {
+@media #{$medium-and-down} {  
   .sidenav {
+    transition: 0.3s;    
     &.sidenav-fixed {
-      transform: translateX(-105%);
+      transform: translateX(0%);
 
       &.right-aligned {
         transform: translateX(105%);

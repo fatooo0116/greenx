@@ -20,10 +20,15 @@
     </head>
     <body >      
         <div id="preload"></div>
+        <ul id="slide-out" class="sidenav">
+          <li><a href="https://help.greenxtrade.com/en/" class="">FAQ</a></li>
+          <li><a href="https://portal.greenxtrade.com/#/signup" class="">Register</a></li>
+          <li><a href="https://idp.greenxtrade.com/users/sign_in" class="">Sign In</a></li>
+        </ul>
 
         <div id="home">
 
-            <div class="navbar-fixed">
+            <div  id="header"  class="navbar-fixed">
                 <nav class="transparent z-depth-0 ">
                         <div class="nav-wrapper">            
                         <a href="index.html" class="brand-logo"><img src="images/green-x-logo.svg"></a>
@@ -33,17 +38,20 @@
                         <ul id="nav-mobile" class="right hide-on-med-and-down">            
                     <!--- help center updated to greenx-trade-inc2 for evergreen  --->
                             <!--li><a href="https://intercom.help/greenx-trade-inc2/en/"  class="">FAQ</a></li-->
-                    <li><a href="https://help.greenxtrade.com/en/" class="">FAQ</a></li>
+                            <li><a href="https://help.greenxtrade.com/en/" class="">FAQ</a></li>
                             <li><a href="https://portal.greenxtrade.com/#/signup" class="">Register</a></li>
                             <li><a href="https://idp.greenxtrade.com/users/sign_in" class="">Sign In</a></li>
                         </ul>
                         </div>
                 </nav>
+                
             </div>
             
 
-           <section id="sec1">
-               <div class="inner">
+           <section id="sec1"  class="parallax-container">
+                <div class="parallax"><img src="images/banner-bg@2x.jpg"></div>
+               <div class="inner  ">
+                  
                 <div class="top_header">
                   <h2>BOOK DIGITALLY WITH GREENX</h2>            
                   <p>Evergreen Marine’s new booking solution – GreenX – allows for secure and fast bookings. The platform is fully integrated with Evergreen SOL systems and e-Services.</p>
@@ -56,24 +64,24 @@
 
            <section id="sec2">
              <div class="inner">
-                    <div classs="logo"><img src="images/green-x-logo2.svg" /></div>
+                    <div class="logo"><img src="images/green-x-logo2.svg" /></div>
 
                     <div class="right">
                       <div class="item">
-                        <div class="num"><span class="count">240</span><span class="tx">+</span></div>
+                        <div class="num"><span id="c1" class="count">240</span><span class="tx">+</span></div>
                         <div class="text">Ports Worldwide</div>
                       </div>
                       <div class="item">
-                        <div class="num"><span class="count">80</span><span class="tx">+</span></div>
+                        <div class="num"><span id="c2" class="count">80</span><span class="tx">+</span></div>
                         <div class="text">Countries</div>
                       </div>              
                       <div class="item">
-                        <div class="num"><span class="count">10</span><span class="tx2">Million+</span></div>
+                        <div class="num"><span id="c3" class="count">10</span><span class="tx2">Million+</span></div>
                         <div class="text">TEU Capability</div>
                       </div>
 
                       <div class="item">
-                        <div class="num"><span class="count">100</span><span class="tx">%</span></div>
+                        <div class="num"><span id="c4" class="count">100</span><span class="tx">%</span></div>
                         <div class="text">Secured Space</div>
                       </div>
                     </div>
@@ -293,9 +301,9 @@
 
 
 
-          <footer class="wrap_footer">
-            <nav class="transparent z-depth-0">
-              <div class="nav-wrapper">                            
+          <footer class="wrap_footer clearfix">
+            <nav class="transparent z-depth-0 clearfix">
+              <div class="nav-wrapper clearfix">                            
                 <ul id="nav-mobile" class="left term">    
                   <li> © 2019 BlueX Trade.<span class="m_hide"> All Rights Reserved.</span></li>         
                   <li><a href="https://portal.greenxtrade.com/#/terms?ver=1.0.1.1186" target="_blank" class="sep">Terms of Use</a></li>
@@ -308,6 +316,9 @@
               </div>
            </nav>
         </footer>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+        <script type="text/javascript" src="js/script.js" ></script>
 
         </div><!-- home -->    
     </body>

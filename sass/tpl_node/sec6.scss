@@ -4,7 +4,7 @@
     background-size:cover;
     background-position:center;
     .inner{
-        transform: translate(-90px, 0%);
+        transform: translate(90px, 0%);
         height:550px;       
         max-width: 1024px;
         margin:auto;
@@ -30,6 +30,21 @@
                 max-width: 300px;;
                 line-height: 18px;;
             }
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    #sec6 .inner {
+        transform: translate(0%, 0%);
+        padding:0 15px;
+    }
+}
+
+@media (max-width: 600px){
+    #sec6 .inner {
+        .float_right{
+            margin:auto;
         }
     }
 }

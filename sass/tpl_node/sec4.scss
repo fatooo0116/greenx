@@ -32,3 +32,32 @@
       }
     }
 }
+
+@media (max-width: 1400px){
+  #sec4 .inner {
+      transform: translate(0%, 0%);
+      padding:0 15px;
+  }
+}
+
+@media (max-width: 768px){
+  #sec4{
+    .inner{
+      flex-wrap: wrap;
+      padding:30px ;
+      flex-direction: column-reverse;
+      .left{
+        width:100%;
+        text-align: center;
+        .pic{
+          img{
+            margin:auto;
+          }
+        }
+      }
+      .right{
+        width:100%;
+      }
+    }
+  }
+}

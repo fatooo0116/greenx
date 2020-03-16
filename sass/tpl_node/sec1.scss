@@ -3,10 +3,11 @@
     // background-image:url(../images/number-bg@2x.jpg);
     background-size:cover;
     background-position:center;
-    background-image:url('../images/banner-bg@2x.jpg');
+   // background-image:url('../images/banner-bg@2x.jpg');
+   height:699px;
 
     .inner{
-        height:700px;
+        height:699px;
         max-width: 1100px;
        margin: auto;
         display: flex;
@@ -34,5 +35,13 @@
                 justify-content: center;
             }
         }
+    }
+}
+
+
+@media (max-width: 1200px){
+
+    #sec1 .inner .top_header{
+        padding: 0 20px;
     }
 }
